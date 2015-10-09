@@ -4,7 +4,7 @@
 public class Calculator {
 
     public double accumulator() {
-        return 1;
+        return 0;
     }
 
 }
