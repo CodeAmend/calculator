@@ -17,4 +17,7 @@ public class Calculator {
         stack.push(value);
     }
 
+    public void add() {
+    }
+
 }

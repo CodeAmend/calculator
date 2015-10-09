@@ -26,4 +26,14 @@ public class CalculatorTest {
         assertEquals(4.0, calc.accumulator(), TOLERANCE);
     }
 
+    @Test
+    public void add_numbers_at_top_of_stack() {
+        calc.input(8.0);
+        calc.input(4.0);
+        calc.add();
+        assertEquals(12.0, calc.accumulator(), TOLERANCE);
+    }
+
+
+
 }
