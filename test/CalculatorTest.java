@@ -46,4 +46,16 @@ public class CalculatorTest {
         assertEquals(-4.0, calc.accumulator(), TOLERANCE);
     }
 
+    // refactor of operations should be an object
+
+    @Test
+    public void operation_object_add_top_of_stack() {
+        input(3.0, 6.0);
+        calc.operation(new Addition());
+        assertEquals(9.0, calc.accumulator(), TOLERANCE);
+    }
+
+
+
+
 }

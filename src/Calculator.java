@@ -1,3 +1,4 @@
+import java.nio.file.OpenOption;
 import java.util.Stack;
 
 /**
@@ -28,6 +29,10 @@ public class Calculator {
         double op1 = stack.pop();
         stack.push(op1 - op2);
 
+    }
+
+    public void operation(Addition op) {
+        op.execute(stack);
     }
 
 }
