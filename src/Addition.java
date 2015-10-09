@@ -7,6 +7,5 @@ public class Addition implements Operation {
 
     @Override
     public void execute(Stack<Double> stack) {
-
     }
 }
