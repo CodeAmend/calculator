@@ -7,4 +7,8 @@ public class Calculator {
         return 0;
     }
 
+    public void input(double value) {
+
+    }
+
 }

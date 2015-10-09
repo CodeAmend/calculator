@@ -14,4 +14,11 @@ public class CalculatorTest {
         assertEquals(0.0, calc.accumulator(), TOLERANCE);
     }
 
+    @Test
+    public void input_one_number() {
+        Calculator calc = new Calculator();
+        calc.input(4.0);
+        assertEquals(4.0, calc.accumulator(), TOLERANCE);
+    }
+
 }
