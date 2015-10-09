@@ -23,4 +23,8 @@ public class Calculator {
         stack.push(op1 + op2);
     }
 
+    public void subtract() {
+
+    }
+
 }
