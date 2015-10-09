@@ -15,6 +15,12 @@ public class CalculatorTest {
         calc = new Calculator();
     }
 
+    public void input(double... value) {
+        for(double num : value) {
+            calc.input(num);
+        }
+    }
+
     @Test
     public void accumulator_default_value() {
         assertEquals(0.0, calc.accumulator(), TOLERANCE);
@@ -22,26 +28,22 @@ public class CalculatorTest {
 
     @Test
     public void input_one_number() {
-        calc.input(4.0);
+        input(4.0);
         assertEquals(4.0, calc.accumulator(), TOLERANCE);
     }
 
     @Test
     public void add_numbers_at_top_of_stack() {
-        calc.input(8.0);
-        calc.input(4.0);
+        input(8.0, 4.0);
         calc.add();
         assertEquals(12.0, calc.accumulator(), TOLERANCE);
     }
 
     @Test
     public void subtract_numbers_at_top_of_stack() {
-        calc.input(4.0);
-        calc.input(8.0);
+        input(4.0, 8.0);
         calc.subtract();
         assertEquals(-4.0, calc.accumulator(), TOLERANCE);
     }
-
-
 
 }
