@@ -19,9 +19,7 @@ public class Calculator {
     }
 
     public void add() {
-        double op2 = stack.pop();
-        double op1 = stack.pop();
-        stack.push(op1 + op2);
+        perform(new Addition());
     }
 
     public void subtract() {
