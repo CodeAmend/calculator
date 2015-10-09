@@ -36,8 +36,8 @@ public class CalculatorTest {
 
     @Test
     public void subtract_numbers_at_top_of_stack() {
-        calc.input(8.0);
         calc.input(4.0);
+        calc.input(8.0);
         calc.subtract();
         assertEquals(-4.0, calc.accumulator(), TOLERANCE);
     }
