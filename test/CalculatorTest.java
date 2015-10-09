@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -7,16 +8,20 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
 
     private final double TOLERANCE = 0.00001d;
+    Calculator calc;
+
+    @Before
+    public void setUp() {
+        calc = new Calculator();
+    }
 
     @Test
     public void accumulator_default_value() {
-        Calculator calc = new Calculator();
         assertEquals(0.0, calc.accumulator(), TOLERANCE);
     }
 
     @Test
     public void input_one_number() {
-        Calculator calc = new Calculator();
         calc.input(4.0);
         assertEquals(4.0, calc.accumulator(), TOLERANCE);
     }
