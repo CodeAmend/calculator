@@ -31,7 +31,7 @@ public class Calculator {
 
     }
 
-    public void operation(Operation op) {
+    public void perform(Operation op) {
         op.execute(stack);
     }
 

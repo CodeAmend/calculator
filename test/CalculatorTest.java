@@ -51,7 +51,7 @@ public class CalculatorTest {
     @Test
     public void operation_object_add_top_of_stack() {
         input(3.0, 6.0);
-        calc.operation(new Addition());
+        calc.perform(new Addition());
         assertEquals(9.0, calc.accumulator(), TOLERANCE);
     }
 
