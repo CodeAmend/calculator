@@ -3,14 +3,11 @@ import java.util.Stack;
 /**
  * Created by codeamend on 10/9/15.
  */
-public class Subtraction implements Operation {
+public class Subtraction extends BinaryOperation {
 
     @Override
-    public void execute(Stack<Double> stack) {
-        double n2 = stack.pop();
-        double n1 = stack.pop();
-        stack.push(n1 - n2);
+    double calculate(double op2, double op1) {
+        return op1 - op2;
     }
-
 
 }

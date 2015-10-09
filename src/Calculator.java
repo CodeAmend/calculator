@@ -1,4 +1,3 @@
-import java.nio.file.OpenOption;
 import java.util.Stack;
 
 /**
@@ -27,8 +26,8 @@ public class Calculator {
 
     }
 
-    public void perform(Operation op) {
-        op.execute(stack);
+    public void perform(Operation operation) {
+        operation.applyTo(stack);
     }
 
 }
