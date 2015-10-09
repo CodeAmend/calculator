@@ -24,6 +24,9 @@ public class Calculator {
     }
 
     public void subtract() {
+        double op2 = stack.pop();
+        double op1 = stack.pop();
+        stack.push(op1 - op2);
 
     }
 
