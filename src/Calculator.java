@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     public void input(double value) {
-        stack.push(value);
+        perform(new Number(value));
     }
 
     public void add() {
